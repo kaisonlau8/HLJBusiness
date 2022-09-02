@@ -1,0 +1,28 @@
+production:
+  environment: production
+  merchant_id: production_merchant_id
+  public_key:  production_public_key
+  private_key: production_private_key
+  jwt_key: 'my$ecretpw'
+  s3: {
+    endpoint: 'http://2.s3.gophagroup.com/',
+    access_key_id: 'admin',
+    secret_access_key: 'key$key',
+    force_path_style: true,
+    region: 'us-east-1',
+    bucket: 'hlj-buss-ass-api'
+  }
+development:
+  environment: sandbox
+  merchant_id: development_merchant_id
+  public_key:  development_public_key
+  private_key: development_private_key
+  jwt_key: 'my$ecretpw'
+  s3: {
+    endpoint: 'http://2.s3.gophagroup.com/',
+    access_key_id: 'admin',
+    secret_access_key: 'key$key',
+    force_path_style: true,
+    region: 'us-east-1',
+    bucket: 'hlj-buss-ass-api'
+  }
